@@ -3,13 +3,13 @@
 int
 main(void) {
     int n, i;
-    Vertex* root = treeInit();
+    Vertex* root = tree_init();
     for (i = 0; i < 100; i++) {
-        addNode(root, i);
+        tree_add_node(root, i);
     }
-    n = countNodes(root);
+    n = tree_count_nodes(root);
     printf("counted %d nodes (includes root)\n", n);
-    traverseNodes(root);
+    tree_traverse_nodes(root);
 
     return 0;
 }

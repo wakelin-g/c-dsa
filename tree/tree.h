@@ -4,15 +4,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define ROOT_VALUE -1
+
 typedef struct Vertex {
     struct Vertex* left;
     struct Vertex* right;
     int value;
 } Vertex;
 
-Vertex* treeInit(void);
-void addNode(Vertex* root, int value);
-int countNodes(Vertex* root);
-void traverseNodes(Vertex* root);
+Vertex* tree_init(void);
+void tree_add_node(Vertex* root, int value);
+int tree_count_nodes(Vertex* root);
+void tree_traverse_nodes(Vertex* root);
 
 #endif
