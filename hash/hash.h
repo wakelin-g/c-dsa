@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define HT_MAX_CAPACITY 11
+#define HT_MAX_CAPACITY 29
 
 typedef struct ht_entry {
     const char* key;
